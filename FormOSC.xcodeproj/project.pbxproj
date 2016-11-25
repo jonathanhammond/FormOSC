@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E9B4B9A31C10D132002E03B7 /* FormOSC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9B4BA161C10D134002E03B7 /* Build configuration list for PBXAggregateTarget "FormOSC" */;
+			buildPhases = (
+				E9B4B9A21C10D132002E03B7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = FormOSC;
+			productName = FormOSC;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E9B4B9AD1C10D132002E03B7 /* FormOSCFormPlugin-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9AC1C10D132002E03B7 /* FormOSCFormPlugin-Prefix.pch */; };
+		E9B4B9B01C10D133002E03B7 /* Former.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4B9AF1C10D133002E03B7 /* Former.framework */; };
+		E9B4B9B21C10D133002E03B7 /* RelativeInterfaceMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4B9B11C10D133002E03B7 /* RelativeInterfaceMac.framework */; };
+		E9B4B9B51C10D133002E03B7 /* FormOSCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4B9B41C10D133002E03B7 /* FormOSCPlugin.m */; };
+		E9B4B9C31C10D133002E03B7 /* FormOSCPerformPlugin-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E9B4B9C21C10D133002E03B7 /* FormOSCPerformPlugin-Prefix.pch */; };
+		E9B4B9C61C10D133002E03B7 /* Performer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4B9C51C10D133002E03B7 /* Performer.framework */; };
+		E9B4B9C81C10D134002E03B7 /* RelativeInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4B9C71C10D134002E03B7 /* RelativeInterface.framework */; };
+		E9B4B9D71C10D134002E03B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4B9D61C10D134002E03B7 /* main.m */; };
+		E9B4B9DA1C10D134002E03B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4B9D91C10D134002E03B7 /* AppDelegate.m */; };
+		E9B4B9DD1C10D134002E03B7 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4B9DC1C10D134002E03B7 /* ConnectViewController.m */; };
+		E9B4B9DF1C10D134002E03B7 /* FormOSCViewer-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9DE1C10D134002E03B7 /* FormOSCViewer-Prefix.pch */; };
+		E9B4B9E11C10D134002E03B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9E01C10D134002E03B7 /* Images.xcassets */; };
+		E9B4B9E31C10D134002E03B7 /* Connect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9E21C10D134002E03B7 /* Connect@2x.png */; };
+		E9B4B9E61C10D134002E03B7 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9E51C10D134002E03B7 /* MaterialIcons-Regular.ttf */; };
+		E9B4B9E81C10D134002E03B7 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9E71C10D134002E03B7 /* Roboto-Black.ttf */; };
+		E9B4B9EA1C10D134002E03B7 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9E91C10D134002E03B7 /* Roboto-BlackItalic.ttf */; };
+		E9B4B9EC1C10D134002E03B7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9EB1C10D134002E03B7 /* Roboto-Bold.ttf */; };
+		E9B4B9EE1C10D134002E03B7 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9ED1C10D134002E03B7 /* Roboto-BoldItalic.ttf */; };
+		E9B4B9F01C10D134002E03B7 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9EF1C10D134002E03B7 /* Roboto-Italic.ttf */; };
+		E9B4B9F21C10D134002E03B7 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9F11C10D134002E03B7 /* Roboto-Light.ttf */; };
+		E9B4B9F41C10D134002E03B7 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9F31C10D134002E03B7 /* Roboto-LightItalic.ttf */; };
+		E9B4B9F61C10D134002E03B7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9F51C10D134002E03B7 /* Roboto-Medium.ttf */; };
+		E9B4B9F81C10D134002E03B7 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9F71C10D134002E03B7 /* Roboto-MediumItalic.ttf */; };
+		E9B4B9FA1C10D134002E03B7 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9F91C10D134002E03B7 /* Roboto-Regular.ttf */; };
+		E9B4B9FC1C10D134002E03B7 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9FB1C10D134002E03B7 /* Roboto-Thin.ttf */; };
+		E9B4B9FE1C10D134002E03B7 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9FD1C10D134002E03B7 /* Roboto-ThinItalic.ttf */; };
+		E9B4BA001C10D134002E03B7 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4B9FF1C10D134002E03B7 /* RobotoCondensed-Bold.ttf */; };
+		E9B4BA021C10D134002E03B7 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA011C10D134002E03B7 /* RobotoCondensed-BoldItalic.ttf */; };
+		E9B4BA041C10D134002E03B7 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA031C10D134002E03B7 /* RobotoCondensed-Italic.ttf */; };
+		E9B4BA061C10D134002E03B7 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA051C10D134002E03B7 /* RobotoCondensed-Light.ttf */; };
+		E9B4BA081C10D134002E03B7 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA071C10D134002E03B7 /* RobotoCondensed-LightItalic.ttf */; };
+		E9B4BA0A1C10D134002E03B7 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA091C10D134002E03B7 /* RobotoCondensed-Regular.ttf */; };
+		E9B4BA0D1C10D134002E03B7 /* Performer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4BA0C1C10D134002E03B7 /* Performer.framework */; };
+		E9B4BA0F1C10D134002E03B7 /* RelativeInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4BA0E1C10D134002E03B7 /* RelativeInterface.framework */; };
+		E9B4BA121C10D134002E03B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA101C10D134002E03B7 /* LaunchScreen.xib */; };
+		E9B4BA241C10D1C3002E03B7 /* FormOSCSenderNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA231C10D1C3002E03B7 /* FormOSCSenderNode.m */; };
+		E9B4BA271C10D1DE002E03B7 /* FormOSCReceiverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA261C10D1DE002E03B7 /* FormOSCReceiverNode.m */; };
+		E9B4BA2A1C10D243002E03B7 /* FormOSCSenderPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA281C10D243002E03B7 /* FormOSCSenderPatch.h */; };
+		E9B4BA2B1C10D243002E03B7 /* FormOSCSenderPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA291C10D243002E03B7 /* FormOSCSenderPatch.m */; };
+		E9B4BA2E1C10D255002E03B7 /* FormOSCReceiverPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA2C1C10D255002E03B7 /* FormOSCReceiverPatch.h */; };
+		E9B4BA2F1C10D255002E03B7 /* FormOSCReceiverPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA2D1C10D255002E03B7 /* FormOSCReceiverPatch.m */; };
+		E9B4BA301C10D29C002E03B7 /* FormOSCPerformPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4B9BF1C10D133002E03B7 /* FormOSCPerformPlugin.framework */; };
+		E9B4BA311C10D2A3002E03B7 /* Performer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9B4BA0C1C10D134002E03B7 /* Performer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9B4BA321C10D2A3002E03B7 /* RelativeInterface.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9B4BA0E1C10D134002E03B7 /* RelativeInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9B4BA331C10D2A3002E03B7 /* FormOSCPerformPlugin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9B4B9BF1C10D133002E03B7 /* FormOSCPerformPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9B4BA5A1C10D31B002E03B7 /* F53OSC.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA341C10D31B002E03B7 /* F53OSC.h */; };
+		E9B4BA5B1C10D31B002E03B7 /* F53OSCBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA351C10D31B002E03B7 /* F53OSCBundle.h */; };
+		E9B4BA5C1C10D31B002E03B7 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA361C10D31B002E03B7 /* F53OSCBundle.m */; };
+		E9B4BA5D1C10D31B002E03B7 /* F53OSCClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA371C10D31B002E03B7 /* F53OSCClient.h */; };
+		E9B4BA5E1C10D31B002E03B7 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA381C10D31B002E03B7 /* F53OSCClient.m */; };
+		E9B4BA5F1C10D31B002E03B7 /* F53OSCFoundationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA391C10D31B002E03B7 /* F53OSCFoundationAdditions.h */; };
+		E9B4BA601C10D31B002E03B7 /* F53OSCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA3A1C10D31B002E03B7 /* F53OSCMessage.h */; };
+		E9B4BA611C10D31B002E03B7 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA3B1C10D31B002E03B7 /* F53OSCMessage.m */; };
+		E9B4BA621C10D31B002E03B7 /* F53OSCPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA3C1C10D31B002E03B7 /* F53OSCPacket.h */; };
+		E9B4BA631C10D31B002E03B7 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA3D1C10D31B002E03B7 /* F53OSCPacket.m */; };
+		E9B4BA641C10D31B002E03B7 /* F53OSCParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA3E1C10D31B002E03B7 /* F53OSCParser.h */; };
+		E9B4BA651C10D31B002E03B7 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA3F1C10D31B002E03B7 /* F53OSCParser.m */; };
+		E9B4BA661C10D31B002E03B7 /* F53OSCProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA401C10D31B002E03B7 /* F53OSCProtocols.h */; };
+		E9B4BA671C10D31B002E03B7 /* F53OSCServer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA411C10D31B002E03B7 /* F53OSCServer.h */; };
+		E9B4BA681C10D31B002E03B7 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA421C10D31B002E03B7 /* F53OSCServer.m */; };
+		E9B4BA691C10D31B002E03B7 /* F53OSCSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA431C10D31B002E03B7 /* F53OSCSocket.h */; };
+		E9B4BA6A1C10D31B002E03B7 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA441C10D31B002E03B7 /* F53OSCSocket.m */; };
+		E9B4BA6B1C10D31B002E03B7 /* F53OSCTimeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA451C10D31B002E03B7 /* F53OSCTimeTag.h */; };
+		E9B4BA6C1C10D31B002E03B7 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA461C10D31B002E03B7 /* F53OSCTimeTag.m */; };
+		E9B4BA711C10D31B002E03B7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BA4B1C10D31B002E03B7 /* LICENSE.txt */; };
+		E9B4BA721C10D31B002E03B7 /* MetatoneNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA4C1C10D31B002E03B7 /* MetatoneNetworkManager.h */; };
+		E9B4BA731C10D31B002E03B7 /* MetatoneNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA4D1C10D31B002E03B7 /* MetatoneNetworkManager.m */; };
+		E9B4BA741C10D31B002E03B7 /* NSData+F53OSCBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA4E1C10D31B002E03B7 /* NSData+F53OSCBlob.h */; };
+		E9B4BA751C10D31B002E03B7 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA4F1C10D31B002E03B7 /* NSData+F53OSCBlob.m */; };
+		E9B4BA761C10D31B002E03B7 /* NSDate+F53OSCTimeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA501C10D31B002E03B7 /* NSDate+F53OSCTimeTag.h */; };
+		E9B4BA771C10D31B002E03B7 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA511C10D31B002E03B7 /* NSDate+F53OSCTimeTag.m */; };
+		E9B4BA781C10D31B002E03B7 /* NSNumber+F53OSCNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA521C10D31B002E03B7 /* NSNumber+F53OSCNumber.h */; };
+		E9B4BA791C10D31B002E03B7 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA531C10D31B002E03B7 /* NSNumber+F53OSCNumber.m */; };
+		E9B4BA7A1C10D31B002E03B7 /* NSString+F53OSCString.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA541C10D31B002E03B7 /* NSString+F53OSCString.h */; };
+		E9B4BA7B1C10D31B002E03B7 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA551C10D31B002E03B7 /* NSString+F53OSCString.m */; };
+		E9B4BA7D1C10D31B002E03B7 /* SocketRocket-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA571C10D31B002E03B7 /* SocketRocket-Prefix.pch */; };
+		E9B4BA7E1C10D31B002E03B7 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA581C10D31B002E03B7 /* SRWebSocket.h */; };
+		E9B4BA7F1C10D31B002E03B7 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA591C10D31B002E03B7 /* SRWebSocket.m */; };
+		E9B4BA841C10D394002E03B7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4BA831C10D394002E03B7 /* libicucore.tbd */; };
+		E9B4BA891C10D41C002E03B7 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA851C10D41C002E03B7 /* GCDAsyncSocket.h */; };
+		E9B4BA8A1C10D41C002E03B7 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA861C10D41C002E03B7 /* GCDAsyncSocket.m */; };
+		E9B4BA8B1C10D41C002E03B7 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4BA871C10D41C002E03B7 /* GCDAsyncUdpSocket.h */; };
+		E9B4BA8C1C10D41C002E03B7 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BA881C10D41C002E03B7 /* GCDAsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9B4B9D11C10D134002E03B7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9B4BA311C10D2A3002E03B7 /* Performer.framework in CopyFiles */,
+				E9B4BA321C10D2A3002E03B7 /* RelativeInterface.framework in CopyFiles */,
+				E9B4BA331C10D2A3002E03B7 /* FormOSCPerformPlugin.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9B4B9A81C10D132002E03B7 /* FormOSCFormPlugin.formplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormOSCFormPlugin.formplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B4B9AC1C10D132002E03B7 /* FormOSCFormPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FormOSCFormPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		E9B4B9AF1C10D133002E03B7 /* Former.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Former.framework; path = ../Frameworks/Former.framework; sourceTree = "<group>"; };
+		E9B4B9B11C10D133002E03B7 /* RelativeInterfaceMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterfaceMac.framework; path = ../Frameworks/RelativeInterfaceMac.framework; sourceTree = "<group>"; };
+		E9B4B9B31C10D133002E03B7 /* FormOSCPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormOSCPlugin.h; sourceTree = "<group>"; };
+		E9B4B9B41C10D133002E03B7 /* FormOSCPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormOSCPlugin.m; sourceTree = "<group>"; };
+		E9B4B9B91C10D133002E03B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B4B9BF1C10D133002E03B7 /* FormOSCPerformPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormOSCPerformPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B4B9C21C10D133002E03B7 /* FormOSCPerformPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FormOSCPerformPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		E9B4B9C51C10D133002E03B7 /* Performer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Performer.framework; path = ../Frameworks/Performer.framework; sourceTree = "<group>"; };
+		E9B4B9C71C10D134002E03B7 /* RelativeInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterface.framework; path = ../Frameworks/RelativeInterface.framework; sourceTree = "<group>"; };
+		E9B4B9CD1C10D134002E03B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B4B9D31C10D134002E03B7 /* FormOSCViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormOSCViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B4B9D61C10D134002E03B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9B4B9D81C10D134002E03B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9B4B9D91C10D134002E03B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9B4B9DB1C10D134002E03B7 /* ConnectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
+		E9B4B9DC1C10D134002E03B7 /* ConnectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		E9B4B9DE1C10D134002E03B7 /* FormOSCViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FormOSCViewer-Prefix.pch"; sourceTree = "<group>"; };
+		E9B4B9E01C10D134002E03B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9B4B9E21C10D134002E03B7 /* Connect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Connect@2x.png"; sourceTree = "<group>"; };
+		E9B4B9E51C10D134002E03B7 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		E9B4B9E71C10D134002E03B7 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		E9B4B9E91C10D134002E03B7 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E9B4B9EB1C10D134002E03B7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E9B4B9ED1C10D134002E03B7 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E9B4B9EF1C10D134002E03B7 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		E9B4B9F11C10D134002E03B7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		E9B4B9F31C10D134002E03B7 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		E9B4B9F51C10D134002E03B7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E9B4B9F71C10D134002E03B7 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E9B4B9F91C10D134002E03B7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E9B4B9FB1C10D134002E03B7 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		E9B4B9FD1C10D134002E03B7 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		E9B4B9FF1C10D134002E03B7 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		E9B4BA011C10D134002E03B7 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E9B4BA031C10D134002E03B7 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		E9B4BA051C10D134002E03B7 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		E9B4BA071C10D134002E03B7 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		E9B4BA091C10D134002E03B7 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		E9B4BA0C1C10D134002E03B7 /* Performer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Performer.framework; path = ../Frameworks/Performer.framework; sourceTree = "<group>"; };
+		E9B4BA0E1C10D134002E03B7 /* RelativeInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterface.framework; path = ../Frameworks/RelativeInterface.framework; sourceTree = "<group>"; };
+		E9B4BA111C10D134002E03B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E9B4BA131C10D134002E03B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B4BA221C10D1C3002E03B7 /* FormOSCSenderNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormOSCSenderNode.h; sourceTree = "<group>"; };
+		E9B4BA231C10D1C3002E03B7 /* FormOSCSenderNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormOSCSenderNode.m; sourceTree = "<group>"; };
+		E9B4BA251C10D1DE002E03B7 /* FormOSCReceiverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormOSCReceiverNode.h; sourceTree = "<group>"; };
+		E9B4BA261C10D1DE002E03B7 /* FormOSCReceiverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormOSCReceiverNode.m; sourceTree = "<group>"; };
+		E9B4BA281C10D243002E03B7 /* FormOSCSenderPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormOSCSenderPatch.h; sourceTree = "<group>"; };
+		E9B4BA291C10D243002E03B7 /* FormOSCSenderPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormOSCSenderPatch.m; sourceTree = "<group>"; };
+		E9B4BA2C1C10D255002E03B7 /* FormOSCReceiverPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormOSCReceiverPatch.h; sourceTree = "<group>"; };
+		E9B4BA2D1C10D255002E03B7 /* FormOSCReceiverPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormOSCReceiverPatch.m; sourceTree = "<group>"; };
+		E9B4BA341C10D31B002E03B7 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
+		E9B4BA351C10D31B002E03B7 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
+		E9B4BA361C10D31B002E03B7 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
+		E9B4BA371C10D31B002E03B7 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
+		E9B4BA381C10D31B002E03B7 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
+		E9B4BA391C10D31B002E03B7 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		E9B4BA3A1C10D31B002E03B7 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
+		E9B4BA3B1C10D31B002E03B7 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
+		E9B4BA3C1C10D31B002E03B7 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
+		E9B4BA3D1C10D31B002E03B7 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
+		E9B4BA3E1C10D31B002E03B7 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCParser.h; sourceTree = "<group>"; };
+		E9B4BA3F1C10D31B002E03B7 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCParser.m; sourceTree = "<group>"; };
+		E9B4BA401C10D31B002E03B7 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCProtocols.h; sourceTree = "<group>"; };
+		E9B4BA411C10D31B002E03B7 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
+		E9B4BA421C10D31B002E03B7 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
+		E9B4BA431C10D31B002E03B7 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCSocket.h; sourceTree = "<group>"; };
+		E9B4BA441C10D31B002E03B7 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCSocket.m; sourceTree = "<group>"; };
+		E9B4BA451C10D31B002E03B7 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
+		E9B4BA461C10D31B002E03B7 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
+		E9B4BA4B1C10D31B002E03B7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		E9B4BA4C1C10D31B002E03B7 /* MetatoneNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneNetworkManager.h; sourceTree = "<group>"; };
+		E9B4BA4D1C10D31B002E03B7 /* MetatoneNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneNetworkManager.m; sourceTree = "<group>"; };
+		E9B4BA4E1C10D31B002E03B7 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		E9B4BA4F1C10D31B002E03B7 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		E9B4BA501C10D31B002E03B7 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		E9B4BA511C10D31B002E03B7 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		E9B4BA521C10D31B002E03B7 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		E9B4BA531C10D31B002E03B7 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		E9B4BA541C10D31B002E03B7 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		E9B4BA551C10D31B002E03B7 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		E9B4BA561C10D31B002E03B7 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		E9B4BA571C10D31B002E03B7 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		E9B4BA581C10D31B002E03B7 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		E9B4BA591C10D31B002E03B7 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		E9B4BA831C10D394002E03B7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		E9B4BA851C10D41C002E03B7 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E9B4BA861C10D41C002E03B7 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E9B4BA871C10D41C002E03B7 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		E9B4BA881C10D41C002E03B7 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9B4B9A51C10D132002E03B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4B9B21C10D133002E03B7 /* RelativeInterfaceMac.framework in Frameworks */,
+				E9B4B9B01C10D133002E03B7 /* Former.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B4B9BB1C10D133002E03B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4BA841C10D394002E03B7 /* libicucore.tbd in Frameworks */,
+				E9B4B9C81C10D134002E03B7 /* RelativeInterface.framework in Frameworks */,
+				E9B4B9C61C10D133002E03B7 /* Performer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B4B9CF1C10D134002E03B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4BA301C10D29C002E03B7 /* FormOSCPerformPlugin.framework in Frameworks */,
+				E9B4BA0F1C10D134002E03B7 /* RelativeInterface.framework in Frameworks */,
+				E9B4BA0D1C10D134002E03B7 /* Performer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9B4B99D1C10D132002E03B7 = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9AA1C10D132002E03B7 /* FormOSCFormPlugin */,
+				E9B4B9C01C10D133002E03B7 /* FormOSCPerformPlugin */,
+				E9B4B9D41C10D134002E03B7 /* FormOSCViewer */,
+				E9B4B9A91C10D132002E03B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9B4B9A91C10D132002E03B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9A81C10D132002E03B7 /* FormOSCFormPlugin.formplugin */,
+				E9B4B9BF1C10D133002E03B7 /* FormOSCPerformPlugin.framework */,
+				E9B4B9D31C10D134002E03B7 /* FormOSCViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9B4B9AA1C10D132002E03B7 /* FormOSCFormPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9B31C10D133002E03B7 /* FormOSCPlugin.h */,
+				E9B4B9B41C10D133002E03B7 /* FormOSCPlugin.m */,
+				E9B4BA221C10D1C3002E03B7 /* FormOSCSenderNode.h */,
+				E9B4BA231C10D1C3002E03B7 /* FormOSCSenderNode.m */,
+				E9B4BA251C10D1DE002E03B7 /* FormOSCReceiverNode.h */,
+				E9B4BA261C10D1DE002E03B7 /* FormOSCReceiverNode.m */,
+				E9B4B9B91C10D133002E03B7 /* Info.plist */,
+				E9B4B9AE1C10D133002E03B7 /* Frameworks */,
+				E9B4B9AB1C10D132002E03B7 /* Supporting Files */,
+			);
+			path = FormOSCFormPlugin;
+			sourceTree = "<group>";
+		};
+		E9B4B9AB1C10D132002E03B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9AC1C10D132002E03B7 /* FormOSCFormPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9B4B9AE1C10D133002E03B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9AF1C10D133002E03B7 /* Former.framework */,
+				E9B4B9B11C10D133002E03B7 /* RelativeInterfaceMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B4B9C01C10D133002E03B7 /* FormOSCPerformPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4BA801C10D322002E03B7 /* MetatoneOSC */,
+				E9B4BA281C10D243002E03B7 /* FormOSCSenderPatch.h */,
+				E9B4BA291C10D243002E03B7 /* FormOSCSenderPatch.m */,
+				E9B4BA2C1C10D255002E03B7 /* FormOSCReceiverPatch.h */,
+				E9B4BA2D1C10D255002E03B7 /* FormOSCReceiverPatch.m */,
+				E9B4B9CD1C10D134002E03B7 /* Info.plist */,
+				E9B4B9C41C10D133002E03B7 /* Frameworks */,
+				E9B4B9C11C10D133002E03B7 /* Supporting Files */,
+			);
+			path = FormOSCPerformPlugin;
+			sourceTree = "<group>";
+		};
+		E9B4B9C11C10D133002E03B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9C21C10D133002E03B7 /* FormOSCPerformPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9B4B9C41C10D133002E03B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4BA831C10D394002E03B7 /* libicucore.tbd */,
+				E9B4B9C51C10D133002E03B7 /* Performer.framework */,
+				E9B4B9C71C10D134002E03B7 /* RelativeInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B4B9D41C10D134002E03B7 /* FormOSCViewer */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9D81C10D134002E03B7 /* AppDelegate.h */,
+				E9B4B9D91C10D134002E03B7 /* AppDelegate.m */,
+				E9B4B9DB1C10D134002E03B7 /* ConnectViewController.h */,
+				E9B4B9DC1C10D134002E03B7 /* ConnectViewController.m */,
+				E9B4B9E01C10D134002E03B7 /* Images.xcassets */,
+				E9B4B9E21C10D134002E03B7 /* Connect@2x.png */,
+				E9B4BA101C10D134002E03B7 /* LaunchScreen.xib */,
+				E9B4BA131C10D134002E03B7 /* Info.plist */,
+				E9B4B9E41C10D134002E03B7 /* Fonts */,
+				E9B4BA0B1C10D134002E03B7 /* Frameworks */,
+				E9B4B9D51C10D134002E03B7 /* Supporting Files */,
+			);
+			path = FormOSCViewer;
+			sourceTree = "<group>";
+		};
+		E9B4B9D51C10D134002E03B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9D61C10D134002E03B7 /* main.m */,
+				E9B4B9DE1C10D134002E03B7 /* FormOSCViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9B4B9E41C10D134002E03B7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4B9E51C10D134002E03B7 /* MaterialIcons-Regular.ttf */,
+				E9B4B9E71C10D134002E03B7 /* Roboto-Black.ttf */,
+				E9B4B9E91C10D134002E03B7 /* Roboto-BlackItalic.ttf */,
+				E9B4B9EB1C10D134002E03B7 /* Roboto-Bold.ttf */,
+				E9B4B9ED1C10D134002E03B7 /* Roboto-BoldItalic.ttf */,
+				E9B4B9EF1C10D134002E03B7 /* Roboto-Italic.ttf */,
+				E9B4B9F11C10D134002E03B7 /* Roboto-Light.ttf */,
+				E9B4B9F31C10D134002E03B7 /* Roboto-LightItalic.ttf */,
+				E9B4B9F51C10D134002E03B7 /* Roboto-Medium.ttf */,
+				E9B4B9F71C10D134002E03B7 /* Roboto-MediumItalic.ttf */,
+				E9B4B9F91C10D134002E03B7 /* Roboto-Regular.ttf */,
+				E9B4B9FB1C10D134002E03B7 /* Roboto-Thin.ttf */,
+				E9B4B9FD1C10D134002E03B7 /* Roboto-ThinItalic.ttf */,
+				E9B4B9FF1C10D134002E03B7 /* RobotoCondensed-Bold.ttf */,
+				E9B4BA011C10D134002E03B7 /* RobotoCondensed-BoldItalic.ttf */,
+				E9B4BA031C10D134002E03B7 /* RobotoCondensed-Italic.ttf */,
+				E9B4BA051C10D134002E03B7 /* RobotoCondensed-Light.ttf */,
+				E9B4BA071C10D134002E03B7 /* RobotoCondensed-LightItalic.ttf */,
+				E9B4BA091C10D134002E03B7 /* RobotoCondensed-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E9B4BA0B1C10D134002E03B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4BA0C1C10D134002E03B7 /* Performer.framework */,
+				E9B4BA0E1C10D134002E03B7 /* RelativeInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B4BA801C10D322002E03B7 /* MetatoneOSC */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4BA341C10D31B002E03B7 /* F53OSC.h */,
+				E9B4BA351C10D31B002E03B7 /* F53OSCBundle.h */,
+				E9B4BA361C10D31B002E03B7 /* F53OSCBundle.m */,
+				E9B4BA371C10D31B002E03B7 /* F53OSCClient.h */,
+				E9B4BA381C10D31B002E03B7 /* F53OSCClient.m */,
+				E9B4BA391C10D31B002E03B7 /* F53OSCFoundationAdditions.h */,
+				E9B4BA3A1C10D31B002E03B7 /* F53OSCMessage.h */,
+				E9B4BA3B1C10D31B002E03B7 /* F53OSCMessage.m */,
+				E9B4BA3C1C10D31B002E03B7 /* F53OSCPacket.h */,
+				E9B4BA3D1C10D31B002E03B7 /* F53OSCPacket.m */,
+				E9B4BA3E1C10D31B002E03B7 /* F53OSCParser.h */,
+				E9B4BA3F1C10D31B002E03B7 /* F53OSCParser.m */,
+				E9B4BA401C10D31B002E03B7 /* F53OSCProtocols.h */,
+				E9B4BA411C10D31B002E03B7 /* F53OSCServer.h */,
+				E9B4BA421C10D31B002E03B7 /* F53OSCServer.m */,
+				E9B4BA431C10D31B002E03B7 /* F53OSCSocket.h */,
+				E9B4BA441C10D31B002E03B7 /* F53OSCSocket.m */,
+				E9B4BA451C10D31B002E03B7 /* F53OSCTimeTag.h */,
+				E9B4BA461C10D31B002E03B7 /* F53OSCTimeTag.m */,
+				E9B4BA851C10D41C002E03B7 /* GCDAsyncSocket.h */,
+				E9B4BA861C10D41C002E03B7 /* GCDAsyncSocket.m */,
+				E9B4BA871C10D41C002E03B7 /* GCDAsyncUdpSocket.h */,
+				E9B4BA881C10D41C002E03B7 /* GCDAsyncUdpSocket.m */,
+				E9B4BA4B1C10D31B002E03B7 /* LICENSE.txt */,
+				E9B4BA4C1C10D31B002E03B7 /* MetatoneNetworkManager.h */,
+				E9B4BA4D1C10D31B002E03B7 /* MetatoneNetworkManager.m */,
+				E9B4BA4E1C10D31B002E03B7 /* NSData+F53OSCBlob.h */,
+				E9B4BA4F1C10D31B002E03B7 /* NSData+F53OSCBlob.m */,
+				E9B4BA501C10D31B002E03B7 /* NSDate+F53OSCTimeTag.h */,
+				E9B4BA511C10D31B002E03B7 /* NSDate+F53OSCTimeTag.m */,
+				E9B4BA521C10D31B002E03B7 /* NSNumber+F53OSCNumber.h */,
+				E9B4BA531C10D31B002E03B7 /* NSNumber+F53OSCNumber.m */,
+				E9B4BA541C10D31B002E03B7 /* NSString+F53OSCString.h */,
+				E9B4BA551C10D31B002E03B7 /* NSString+F53OSCString.m */,
+				E9B4BA561C10D31B002E03B7 /* README.markdown */,
+				E9B4BA571C10D31B002E03B7 /* SocketRocket-Prefix.pch */,
+				E9B4BA581C10D31B002E03B7 /* SRWebSocket.h */,
+				E9B4BA591C10D31B002E03B7 /* SRWebSocket.m */,
+			);
+			name = MetatoneOSC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9B4B9BC1C10D133002E03B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4BA7D1C10D31B002E03B7 /* SocketRocket-Prefix.pch in Headers */,
+				E9B4BA5F1C10D31B002E03B7 /* F53OSCFoundationAdditions.h in Headers */,
+				E9B4B9C31C10D133002E03B7 /* FormOSCPerformPlugin-Prefix.pch in Headers */,
+				E9B4BA891C10D41C002E03B7 /* GCDAsyncSocket.h in Headers */,
+				E9B4BA661C10D31B002E03B7 /* F53OSCProtocols.h in Headers */,
+				E9B4BA8B1C10D41C002E03B7 /* GCDAsyncUdpSocket.h in Headers */,
+				E9B4BA741C10D31B002E03B7 /* NSData+F53OSCBlob.h in Headers */,
+				E9B4BA721C10D31B002E03B7 /* MetatoneNetworkManager.h in Headers */,
+				E9B4BA5A1C10D31B002E03B7 /* F53OSC.h in Headers */,
+				E9B4BA621C10D31B002E03B7 /* F53OSCPacket.h in Headers */,
+				E9B4BA641C10D31B002E03B7 /* F53OSCParser.h in Headers */,
+				E9B4BA691C10D31B002E03B7 /* F53OSCSocket.h in Headers */,
+				E9B4BA671C10D31B002E03B7 /* F53OSCServer.h in Headers */,
+				E9B4BA5D1C10D31B002E03B7 /* F53OSCClient.h in Headers */,
+				E9B4BA6B1C10D31B002E03B7 /* F53OSCTimeTag.h in Headers */,
+				E9B4BA7A1C10D31B002E03B7 /* NSString+F53OSCString.h in Headers */,
+				E9B4BA2E1C10D255002E03B7 /* FormOSCReceiverPatch.h in Headers */,
+				E9B4BA781C10D31B002E03B7 /* NSNumber+F53OSCNumber.h in Headers */,
+				E9B4BA7E1C10D31B002E03B7 /* SRWebSocket.h in Headers */,
+				E9B4BA601C10D31B002E03B7 /* F53OSCMessage.h in Headers */,
+				E9B4BA2A1C10D243002E03B7 /* FormOSCSenderPatch.h in Headers */,
+				E9B4BA5B1C10D31B002E03B7 /* F53OSCBundle.h in Headers */,
+				E9B4BA761C10D31B002E03B7 /* NSDate+F53OSCTimeTag.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9B4B9A71C10D132002E03B7 /* FormOSCFormPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B4BA191C10D134002E03B7 /* Build configuration list for PBXNativeTarget "FormOSCFormPlugin" */;
+			buildPhases = (
+				E9B4B9A41C10D132002E03B7 /* Sources */,
+				E9B4B9A51C10D132002E03B7 /* Frameworks */,
+				E9B4B9A61C10D132002E03B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormOSCFormPlugin;
+			productName = FormOSCFormPlugin;
+			productReference = E9B4B9A81C10D132002E03B7 /* FormOSCFormPlugin.formplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E9B4B9BE1C10D133002E03B7 /* FormOSCPerformPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B4BA1C1C10D134002E03B7 /* Build configuration list for PBXNativeTarget "FormOSCPerformPlugin" */;
+			buildPhases = (
+				E9B4B9BA1C10D133002E03B7 /* Sources */,
+				E9B4B9BB1C10D133002E03B7 /* Frameworks */,
+				E9B4B9BC1C10D133002E03B7 /* Headers */,
+				E9B4B9BD1C10D133002E03B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormOSCPerformPlugin;
+			productName = FormOSCPerformPlugin;
+			productReference = E9B4B9BF1C10D133002E03B7 /* FormOSCPerformPlugin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9B4B9D21C10D134002E03B7 /* FormOSCViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B4BA1F1C10D134002E03B7 /* Build configuration list for PBXNativeTarget "FormOSCViewer" */;
+			buildPhases = (
+				E9B4B9CE1C10D134002E03B7 /* Sources */,
+				E9B4B9CF1C10D134002E03B7 /* Frameworks */,
+				E9B4B9D01C10D134002E03B7 /* Resources */,
+				E9B4B9D11C10D134002E03B7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormOSCViewer;
+			productName = FormOSCViewer;
+			productReference = E9B4B9D31C10D134002E03B7 /* FormOSCViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9B4B99E1C10D132002E03B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Google;
+				TargetAttributes = {
+					E9B4B9A31C10D132002E03B7 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					E9B4B9A71C10D132002E03B7 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					E9B4B9BE1C10D133002E03B7 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					E9B4B9D21C10D134002E03B7 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = E9B4B9A11C10D132002E03B7 /* Build configuration list for PBXProject "FormOSC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9B4B99D1C10D132002E03B7;
+			productRefGroup = E9B4B9A91C10D132002E03B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9B4B9A31C10D132002E03B7 /* FormOSC */,
+				E9B4B9A71C10D132002E03B7 /* FormOSCFormPlugin */,
+				E9B4B9BE1C10D133002E03B7 /* FormOSCPerformPlugin */,
+				E9B4B9D21C10D134002E03B7 /* FormOSCViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9B4B9A61C10D132002E03B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4B9AD1C10D132002E03B7 /* FormOSCFormPlugin-Prefix.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B4B9BD1C10D133002E03B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4BA711C10D31B002E03B7 /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B4B9D01C10D134002E03B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4B9EC1C10D134002E03B7 /* Roboto-Bold.ttf in Resources */,
+				E9B4B9F41C10D134002E03B7 /* Roboto-LightItalic.ttf in Resources */,
+				E9B4BA041C10D134002E03B7 /* RobotoCondensed-Italic.ttf in Resources */,
+				E9B4BA021C10D134002E03B7 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				E9B4B9F81C10D134002E03B7 /* Roboto-MediumItalic.ttf in Resources */,
+				E9B4B9F01C10D134002E03B7 /* Roboto-Italic.ttf in Resources */,
+				E9B4B9F21C10D134002E03B7 /* Roboto-Light.ttf in Resources */,
+				E9B4B9DF1C10D134002E03B7 /* FormOSCViewer-Prefix.pch in Resources */,
+				E9B4B9EE1C10D134002E03B7 /* Roboto-BoldItalic.ttf in Resources */,
+				E9B4B9EA1C10D134002E03B7 /* Roboto-BlackItalic.ttf in Resources */,
+				E9B4B9FC1C10D134002E03B7 /* Roboto-Thin.ttf in Resources */,
+				E9B4B9FA1C10D134002E03B7 /* Roboto-Regular.ttf in Resources */,
+				E9B4BA081C10D134002E03B7 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				E9B4B9E11C10D134002E03B7 /* Images.xcassets in Resources */,
+				E9B4BA0A1C10D134002E03B7 /* RobotoCondensed-Regular.ttf in Resources */,
+				E9B4BA121C10D134002E03B7 /* LaunchScreen.xib in Resources */,
+				E9B4B9F61C10D134002E03B7 /* Roboto-Medium.ttf in Resources */,
+				E9B4BA061C10D134002E03B7 /* RobotoCondensed-Light.ttf in Resources */,
+				E9B4B9FE1C10D134002E03B7 /* Roboto-ThinItalic.ttf in Resources */,
+				E9B4BA001C10D134002E03B7 /* RobotoCondensed-Bold.ttf in Resources */,
+				E9B4B9E81C10D134002E03B7 /* Roboto-Black.ttf in Resources */,
+				E9B4B9E31C10D134002E03B7 /* Connect@2x.png in Resources */,
+				E9B4B9E61C10D134002E03B7 /* MaterialIcons-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9B4B9A21C10D132002E03B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${BUILD_DIR}\"\n\n## Build all of the Xcode configurations.\n# Mac\nxcodebuild -project \"${PROJECT_DIR}/FormOSC.xcodeproj\" -scheme FormOSCFormPlugin -configuration Release BUILD_DIR=\"${BUILD_DIR}\"\n\n# iOS\nxcodebuild -project \"${PROJECT_DIR}/FormOSC.xcodeproj\" -scheme FormOSCPerformPlugin -configuration Release -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\"\nxcodebuild -project \"${PROJECT_DIR}/FormOSC.xcodeproj\" -scheme FormOSCPerformPlugin -configuration Release -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\"\n\n# Create the destination directory.\nDEST_DIR=./FormOSC\nrm -rf $DEST_DIR\nmkdir -p \"$DEST_DIR/FormOSC.formplugin\"\n\n# Copy the OSX build\ncp -fR \"./Release/FormOSCFormPlugin.formplugin/\" \"$DEST_DIR/FormOSC.formplugin/\"\n\n# Copy the iOS build\ncp -fR \"./Release-iphoneos/FormOSCPerformPlugin.framework\" \"$DEST_DIR/FormOSCPerformPlugin.framework\"\n\n# lipo the iOS build\nlipo -create \"${BUILD_DIR}/Release-iphonesimulator/FormOSCPerformPlugin.framework/FormOSCPerformPlugin\" \"${BUILD_DIR}/Release-iphoneos/FormOSCPerformPlugin.framework/FormOSCPerformPlugin\" -output \"$DEST_DIR/FormOSCPerformPlugin.framework/FormOSCPerformPlugin\"\n\n# Copy the iOS build into the OSX plugin for safe keeping\nmkdir -p \"$DEST_DIR/FormOSC.formplugin/Contents/Perform/\"\ncp -fR \"$DEST_DIR/FormOSCPerformPlugin.framework\" \"$DEST_DIR/FormOSC.formplugin/Contents/Perform/\"\n\n# Install plugin\nmkdir -p \"$HOME/Library/Application Support/Form/PlugIns/\"\ncp -fR \"$DEST_DIR/FormOSC.formplugin\" \"$HOME/Library/Application Support/Form/PlugIns/\"\n\n# Reveal the finished plugin if we're archiving\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    open --reveal $DEST_DIR\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9B4B9A41C10D132002E03B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4B9B51C10D133002E03B7 /* FormOSCPlugin.m in Sources */,
+				E9B4BA241C10D1C3002E03B7 /* FormOSCSenderNode.m in Sources */,
+				E9B4BA271C10D1DE002E03B7 /* FormOSCReceiverNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B4B9BA1C10D133002E03B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4BA611C10D31B002E03B7 /* F53OSCMessage.m in Sources */,
+				E9B4BA2F1C10D255002E03B7 /* FormOSCReceiverPatch.m in Sources */,
+				E9B4BA2B1C10D243002E03B7 /* FormOSCSenderPatch.m in Sources */,
+				E9B4BA791C10D31B002E03B7 /* NSNumber+F53OSCNumber.m in Sources */,
+				E9B4BA681C10D31B002E03B7 /* F53OSCServer.m in Sources */,
+				E9B4BA8A1C10D41C002E03B7 /* GCDAsyncSocket.m in Sources */,
+				E9B4BA7B1C10D31B002E03B7 /* NSString+F53OSCString.m in Sources */,
+				E9B4BA5C1C10D31B002E03B7 /* F53OSCBundle.m in Sources */,
+				E9B4BA731C10D31B002E03B7 /* MetatoneNetworkManager.m in Sources */,
+				E9B4BA631C10D31B002E03B7 /* F53OSCPacket.m in Sources */,
+				E9B4BA8C1C10D41C002E03B7 /* GCDAsyncUdpSocket.m in Sources */,
+				E9B4BA771C10D31B002E03B7 /* NSDate+F53OSCTimeTag.m in Sources */,
+				E9B4BA5E1C10D31B002E03B7 /* F53OSCClient.m in Sources */,
+				E9B4BA6A1C10D31B002E03B7 /* F53OSCSocket.m in Sources */,
+				E9B4BA6C1C10D31B002E03B7 /* F53OSCTimeTag.m in Sources */,
+				E9B4BA7F1C10D31B002E03B7 /* SRWebSocket.m in Sources */,
+				E9B4BA751C10D31B002E03B7 /* NSData+F53OSCBlob.m in Sources */,
+				E9B4BA651C10D31B002E03B7 /* F53OSCParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B4B9CE1C10D134002E03B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4B9DA1C10D134002E03B7 /* AppDelegate.m in Sources */,
+				E9B4B9DD1C10D134002E03B7 /* ConnectViewController.m in Sources */,
+				E9B4B9D71C10D134002E03B7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9B4BA101C10D134002E03B7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B4BA111C10D134002E03B7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9B4BA141C10D134002E03B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		E9B4BA151C10D134002E03B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		E9B4BA171C10D134002E03B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9B4BA181C10D134002E03B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9B4BA1A1C10D134002E03B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "FormOSCFormPlugin/FormOSCFormPlugin-Prefix.pch";
+				INFOPLIST_FILE = FormOSCFormPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.FormOSCFormPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = formplugin;
+			};
+			name = Debug;
+		};
+		E9B4BA1B1C10D134002E03B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "FormOSCFormPlugin/FormOSCFormPlugin-Prefix.pch";
+				INFOPLIST_FILE = FormOSCFormPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.FormOSCFormPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = formplugin;
+			};
+			name = Release;
+		};
+		E9B4BA1D1C10D134002E03B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormOSCPerformPlugin/FormOSCPerformPlugin-Prefix.pch";
+				INFOPLIST_FILE = FormOSCPerformPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.FormOSCPerformPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9B4BA1E1C10D134002E03B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormOSCPerformPlugin/FormOSCPerformPlugin-Prefix.pch";
+				INFOPLIST_FILE = FormOSCPerformPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.FormOSCPerformPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9B4BA201C10D134002E03B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormOSCViewer/FormOSCViewer-Prefix.pch";
+				INFOPLIST_FILE = FormOSCViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.FormOSCViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9B4BA211C10D134002E03B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormOSCViewer/FormOSCViewer-Prefix.pch";
+				INFOPLIST_FILE = FormOSCViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.FormOSCViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9B4B9A11C10D132002E03B7 /* Build configuration list for PBXProject "FormOSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B4BA141C10D134002E03B7 /* Debug */,
+				E9B4BA151C10D134002E03B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B4BA161C10D134002E03B7 /* Build configuration list for PBXAggregateTarget "FormOSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B4BA171C10D134002E03B7 /* Debug */,
+				E9B4BA181C10D134002E03B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B4BA191C10D134002E03B7 /* Build configuration list for PBXNativeTarget "FormOSCFormPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B4BA1A1C10D134002E03B7 /* Debug */,
+				E9B4BA1B1C10D134002E03B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B4BA1C1C10D134002E03B7 /* Build configuration list for PBXNativeTarget "FormOSCPerformPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B4BA1D1C10D134002E03B7 /* Debug */,
+				E9B4BA1E1C10D134002E03B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B4BA1F1C10D134002E03B7 /* Build configuration list for PBXNativeTarget "FormOSCViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B4BA201C10D134002E03B7 /* Debug */,
+				E9B4BA211C10D134002E03B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9B4B99E1C10D132002E03B7 /* Project object */;
+}
